@@ -22,6 +22,6 @@ jobs:
       - name: Install Dependencies
         run: pip install -r requirements.txt
       - name: Install dldock
-        run: bash build.sh
+        run: pip install .
       - name: Run Unit Tests
         run: pytest tests
